@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClickBackground"
+    tools:context=".ImageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/prime_transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarColoredMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationContentDescription="Menu Bar"
+        app:navigationIcon="@drawable/arrow_back"
+        app:titleTextAppearance="@style/CustomToolbarTitle"
+        app:titleTextColor="@color/secondary" />
+
+
+    <TextView
+        android:id="@+id/tvTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/prime_transparent"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/raleway"
+        android:padding="12dp"
+        android:text="tag"
+        android:textColor="@color/third"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:drawableStartCompat="@drawable/baseline_tag_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGallery"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/round_btn"
+            android:padding="0dp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            app:icon="@drawable/download"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="24dp"
+            app:iconTint="@color/secondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPhone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_btn"
+            android:onClick="onClickInstallTelephone"
+            android:padding="0dp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@null"
+            app:icon="@drawable/install_mobile"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="24dp"
+            app:iconTint="@color/secondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

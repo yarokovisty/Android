@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNameGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/raydis"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#6750A3"
+        android:drawableLeft="@drawable/manb"
+        android:drawableRight="@drawable/robot"
+        android:onClick="onClickPlayer1"
+        android:text="@string/vs"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvNameGame"
+        app:layout_constraintStart_toStartOf="@+id/tvNameGame"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameGame" />
+
+    <Button
+        android:id="@+id/btnPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#6750A3"
+        android:drawableLeft="@drawable/manb"
+        android:drawableRight="@drawable/manb"
+        android:onClick="onClickPlayer2"
+        android:text="@string/vs"
+        android:textColor="@color/white"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPlayer1"
+        app:layout_constraintStart_toStartOf="@+id/btnPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayer1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

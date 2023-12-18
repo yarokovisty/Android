@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_clear">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="prime">#151129</color>
+    <color name="prime_transparent">#70151129</color>
+    <color name="secondary">#FBAD67</color>
+    <color name="third">#F97992</color>
+    <color name="third90">#90F97992</color>
+</resources>

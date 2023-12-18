@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WallMaster" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/prime</item>
+
+    </style>
+
+    <style name="Theme.WallMaster" parent="Base.Theme.WallMaster" />
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="vs" translatable="false">VS</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="play_again">Play again</string>
+    <string name="exit">Exit</string>
+    <string name="won">Won</string>
+    <string name="win">Win</string>
+    <string name="computer">Computer</string>
+    <string name="player">Player</string>
+    <string name="draw">Draw</string>
+</resources>

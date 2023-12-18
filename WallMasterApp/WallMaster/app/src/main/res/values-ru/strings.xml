@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WallMaster</string>
+    <string name="welcome">Добро пожаловать</string>
+    <string name="search">Искать</string>
+    <string name="login">Авторизоваться</string>
+    <string name="main">Главная</string>
+    <string name="favorites">Избранное</string>
+    <string name="history">История</string>
+    <string name="settings">Настройки</string>
+    <string name="support">Поддержка</string>
+    <string name="information">Информация</string>
+    <string name="account">Счет</string>
+    <string name="download_screen">Установить на экран</string>
+    <string name="download_lock_screen">Установить на экран блокиоровки</string>
+    <string name="download_both">Установить туда и туда</string>
+    <string name="download">Скачано</string>
+    <string name="install">Установленно</string>
+    <string name="search_et">Поиск</string>
+    <string name="not_found">Не найдено</string>
+    <string name="favorite">Избранное</string>
+</resources>

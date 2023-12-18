@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomToolbarTitle">
+        <item name="android:fontFamily">@font/raleway</item> <!-- Здесь выберите ваш шрифт -->
+        <item name="android:textSize">22sp</item> <!-- Размер шрифта -->
+        <item name="android:textColor">@color/secondary</item> <!-- Цвет текста -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ToolbarColoredMenu">
+        <item name="android:textColorSecondary">@color/secondary</item>
+    </style>
+</resources>

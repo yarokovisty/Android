@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Clock</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="interval">Interval</string>
+    <string name="segmentTime">Segment time</string>
+    <string name="total">Total</string>
+    <string name="Stopwatch">Stopwatch</string>
+    <string name="timer">Timer</string>
+    <string name="clear">Clear</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">OK</string>
+    <string name="hour">Hour</string>
+    <string name="minute">Minute</string>
+    <string name="second">Second</string>
+    <string name="timeUp">Time is up</string>
+</resources>

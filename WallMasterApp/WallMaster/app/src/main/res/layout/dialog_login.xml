@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/prime">
+
+        <EditText
+            android:id="@+id/edLogin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:drawableLeft="@drawable/icon_group"
+            android:drawablePadding="15dp"
+            android:hint="Login"
+            android:textColor="@color/third"
+            android:textColorHint="@color/third"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/lock_icon"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:password="true"
+            android:textColor="@color/third"
+            android:textColorHint="@color/third"
+            app:layout_constraintEnd_toEndOf="@+id/edLogin"
+            app:layout_constraintStart_toStartOf="@+id/edLogin"
+            app:layout_constraintTop_toBottomOf="@+id/edLogin" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/raleway"
+            android:text="Login"
+            android:textColor="@color/prime"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/third"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/edPassword"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/edPassword"
+            app:layout_constraintTop_toBottomOf="@id/edPassword"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

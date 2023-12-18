@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Состояние нажатия -->
+    <item android:state_pressed="true" android:drawable="@color/third"/>
+
+    <!-- Состояние по умолчания -->
+    <item android:drawable="@color/prime"/>
+</selector>
