@@ -1,12 +1,17 @@
 package com.example.wallmaster
 
+import android.app.Dialog
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
+import android.view.ViewGroup
+import android.view.WindowManager
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.drawerlayout.widget.DrawerLayout
@@ -113,6 +118,7 @@ class HistoryActivity : AppCompatActivity() {
             android.R.id.home -> finish()
             R.id.icon_delete -> {
                 historyRepository.clearHistory()
+                adapter.clearWalls()
             }
         }
 
