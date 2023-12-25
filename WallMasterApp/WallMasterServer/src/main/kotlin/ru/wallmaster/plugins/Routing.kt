@@ -1,16 +1,14 @@
 package ru.wallmaster.plugins
 
 import io.ktor.server.application.*
+import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import kotlinx.serialization.Serializable
 import org.jetbrains.exposed.sql.SchemaUtils
 import org.jetbrains.exposed.sql.selectAll
 import org.jetbrains.exposed.sql.transactions.transaction
-import ru.wallmaster.GroupDTO
-import ru.wallmaster.GroupTable
-import ru.wallmaster.ImageDTO
-import ru.wallmaster.ImageTable
+import ru.wallmaster.*
 import java.awt.image.BufferedImage
 import java.io.ByteArrayOutputStream
 import java.io.File
@@ -103,6 +101,11 @@ fun Application.configureRouting() {
             val imgGroup = createWallImg(group, "tattoo")
             call.respond(imgGroup)
         }
+        post("/search") {
+            val receive = call.receive(SearchReceiveRemote::class).tag
+            val list = searchImg(group, receive)
+            call.respond(mapOf("search" to list))
+        }
         
     }
 }
@@ -157,4 +160,21 @@ fun createWallImg(groups: List<ImageDTO>, name: String): MutableMap<String, Muta
     }
 
     return map
+}
+
+fun searchImg(groups: List<ImageDTO>, group: String): MutableList<SearchResponseRemote>{
+    val list = mutableListOf<SearchResponseRemote>()
+
+    groups.forEach {
+        if (group in it.tags) {
+            val imgFile = File(it.path)
+            val img = ImageIO.read(imgFile)
+            val outputStream = ByteArrayOutputStream()
+            ImageIO.write(img, "jpg", outputStream)
+            val bytes = outputStream.toByteArray()
+            list.add(SearchResponseRemote(it.tags, bytes))
+        }
+    }
+
+    return list
 }
